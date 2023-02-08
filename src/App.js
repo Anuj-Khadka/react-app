@@ -1,12 +1,13 @@
 import './App.css';
-import Hello from './components/jsx'
+import Component from './components/Component'
+// import Hello from './components/jsx'
 
 function App() {
   return (
     <div className="App">
       <>
-      This is just a idk.
-      <Hello/>
+      {/* <Hello/> */}
+      <Component />
       </>
     </div>
   );
