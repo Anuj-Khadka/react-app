@@ -21,8 +21,8 @@ function Component(){
         </ul>
         <div>
         <p>Components are of two types:</p>
-        <a href="./components/functional_component.js">Stateless functional components</a> <br/>
-        <a href="./components/class_component.js">Stateful class components</a>
+        <a href="./components/FunctionComponent.js">Stateless functional components</a> <br/>
+        <a href="./components/ClassComponent.js">Stateful class components</a>
         </div>
         <FuncComp />
         <ClassComp />
