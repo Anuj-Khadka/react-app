@@ -7,7 +7,10 @@ import "./App.css";
 // import Component from './components/Component'
 
 // props
-import PropsFunction, { PropsClass, PropsChild, PropsExpression  } from "./components/Propes";
+// import PropsFunction, { PropsClass, PropsChild, PropsExpression  } from "./components/Propes";
+
+// state
+import States, {ClassCounter, FunctionStates} from "./components/States";
 
 
 
@@ -19,15 +22,20 @@ function App() {
         {/* <StyleJsx /> */}
         {/* <Component /> */}
 
-        <PropsFunction type="function" rate="good"/>
         {/* props */}
         {/* 
+        <PropsFunction type="function" rate="good"/>
         <PropsClass/>
         <PropsChild>
           <button>this is a button, which is added from app.js file</button>
         </PropsChild> 
-      */}
       <PropsExpression math={2*2} />
+      */}
+
+      {/* state  */}
+      {/* <States /> */}
+      {/* <ClassCounter /> */}
+      <FunctionStates />
       </>
     </div>
   );
