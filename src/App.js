@@ -8,16 +8,18 @@ import "./App.css";
 
 // props
 // import PropsFunction, { PropsClass, PropsChild, PropsExpression  } from "./components/Propes";
+import ParentComponent from "./components/MethodsAsProps";
 
 // state
-import States, {ClassCounter, FunctionStates} from "./components/States";
+// import States, {ClassCounter, FunctionStates} from "./components/States";
+// import EventBind from "./components/EventBind";
+
 
 
 
 function App() {
   return (
     <div className="App">
-      <>
         {/* <Hello/> */}
         {/* <StyleJsx /> */}
         {/* <Component /> */}
@@ -31,12 +33,13 @@ function App() {
         </PropsChild> 
       <PropsExpression math={2*2} />
       */}
+      <ParentComponent />
 
       {/* state  */}
       {/* <States /> */}
       {/* <ClassCounter /> */}
-      <FunctionStates />
-      </>
+      {/* <FunctionStates /> */}
+      {/* <EventBind /> */}
     </div>
   );
 }
