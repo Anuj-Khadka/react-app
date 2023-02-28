@@ -8,24 +8,24 @@ import "./App.css";
 
 // props
 // import PropsFunction, { PropsClass, PropsChild, PropsExpression  } from "./components/Propes";
-import ParentComponent from "./components/MethodsAsProps";
+// import ParentComponent from "./components/MethodsAsProps";
 
 // state
 // import States, {ClassCounter, FunctionStates} from "./components/States";
 // import EventBind from "./components/EventBind";
 
-
-
+// import Conditional from "./components/ConditionalRendering";
+import NameList, {NameObject} from "./components/NameList";
 
 function App() {
   return (
     <div className="App">
-        {/* <Hello/> */}
-        {/* <StyleJsx /> */}
-        {/* <Component /> */}
+      {/* <Hello/> */}
+      {/* <StyleJsx /> */}
+      {/* <Component /> */}
 
-        {/* props */}
-        {/* 
+      {/* props */}
+      {/* 
         <PropsFunction type="function" rate="good"/>
         <PropsClass/>
         <PropsChild>
@@ -33,13 +33,16 @@ function App() {
         </PropsChild> 
       <PropsExpression math={2*2} />
       */}
-      <ParentComponent />
+      {/* <ParentComponent /> */}
 
       {/* state  */}
       {/* <States /> */}
       {/* <ClassCounter /> */}
       {/* <FunctionStates /> */}
       {/* <EventBind /> */}
+      {/* <Conditional /> */}
+      {/* <NameList /> */}
+      <NameObject />
     </div>
   );
 }
