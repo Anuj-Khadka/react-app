@@ -2,8 +2,16 @@ import React, { useState } from "react";
 
 function ReactFormHandling() {
   const [user, setUser] = useState();
+  const [email, setEmail] = useState();
+  const [comment, setComment] = useState();
   const changeUserHandler = (event) => {
     setUser(event.target.value);
+  };
+  const changeEmailHandler = (event) => {
+    setEmail(event.target.value);
+  };
+  const changeCommentHandler = (event) => {
+    setComment(event.target.value);
   };
   return (
     <div>
@@ -24,7 +32,7 @@ function ReactFormHandling() {
             type="email"
             name="email"
             id="email"
-            value={user}
+            value={email}
             onChange={changeEmailHandler}
           />
         </div>
@@ -34,7 +42,7 @@ function ReactFormHandling() {
             type="text"
             name="comment"
             id="comment"
-            value={user}
+            value={comment}
             onChange={changeCommentHandler}
           ></textarea>
         </div>
