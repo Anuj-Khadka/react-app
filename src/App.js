@@ -15,7 +15,9 @@ import "./App.css";
 // import EventBind from "./components/EventBind";
 
 // import Conditional from "./components/ConditionalRendering";
-import NameList, {NameObject} from "./components/NameList";
+// import NameList, {NameObject} from "./components/NameList";
+
+import ReactFormHandling from "./components/FormHandling";
 
 function App() {
   return (
@@ -42,7 +44,9 @@ function App() {
       {/* <EventBind /> */}
       {/* <Conditional /> */}
       {/* <NameList /> */}
-      <NameObject />
+      {/* <NameObject /> */}
+
+      <ReactFormHandling />
     </div>
   );
 }
