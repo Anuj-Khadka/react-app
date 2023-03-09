@@ -28,9 +28,9 @@ class UpdateLifecycle extends Component {
   render() {
     console.log("this is render in Update (child)");
     return (
-      <>
+      <React.Fragment>
         <div>UpdateLifecycle hehe</div>
-      </>
+      </React.Fragment>
     );
   }
 
