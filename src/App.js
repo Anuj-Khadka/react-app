@@ -17,7 +17,13 @@ import "./App.css";
 // import Conditional from "./components/ConditionalRendering";
 // import NameList, {NameObject} from "./components/NameList";
 
-import ReactFormHandling from "./components/FormHandling";
+// import ReactFormHandling from "./components/FormHandling";
+
+// lifecycle methods
+// import MountLifecycle from "./components/MountLifecycle";
+// import MountLifecycleParent from "./components/MountLifecycleParent";
+import UpdateLifecycleParent from "./components/UpdateLifecycleParent";
+
 
 function App() {
   return (
@@ -46,7 +52,12 @@ function App() {
       {/* <NameList /> */}
       {/* <NameObject /> */}
 
-      <ReactFormHandling />
+      {/* <ReactFormHandling /> */}
+
+      {/* lifecycle methods  */}
+      {/* <MountLifecycle /> */}
+      {/* < MountLifecycleParent /> */}
+      <UpdateLifecycleParent />
     </div>
   );
 }
