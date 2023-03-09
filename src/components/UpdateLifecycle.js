@@ -29,6 +29,7 @@ class UpdateLifecycle extends Component {
     console.log("this is render in Update (child)");
     return (
       <React.Fragment>
+        {/* React.Fragment is the same as <></> but the difference is that we can use "key" attribute in raw form only. */}
         <div>UpdateLifecycle hehe</div>
       </React.Fragment>
     );
