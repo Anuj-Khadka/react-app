@@ -22,7 +22,12 @@ import "./App.css";
 // lifecycle methods
 // import MountLifecycle from "./components/MountLifecycle";
 // import MountLifecycleParent from "./components/MountLifecycleParent";
-import UpdateLifecycleParent from "./components/UpdateLifecycleParent";
+// import UpdateLifecycleParent from "./components/UpdateLifecycleParent";
+
+// pure components 
+// import PureParentComponent from "./components/PureParentComponent";
+import MemoParentComponent from "./components/MemoParentComponent";
+import RefsDemo from "./components/RefsDemo";
 
 
 function App() {
@@ -57,7 +62,13 @@ function App() {
       {/* lifecycle methods  */}
       {/* <MountLifecycle /> */}
       {/* < MountLifecycleParent /> */}
-      <UpdateLifecycleParent />
+      {/* <UpdateLifecycleParent /> */}
+
+      {/* pure components */}
+      {/* <PureParentComponent /> */}
+      {/* <MemoParentComponent /> */}
+
+      <RefsDemo />
     </div>
   );
 }
