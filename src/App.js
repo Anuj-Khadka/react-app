@@ -24,11 +24,15 @@ import "./App.css";
 // import MountLifecycleParent from "./components/MountLifecycleParent";
 // import UpdateLifecycleParent from "./components/UpdateLifecycleParent";
 
-// pure components 
+// pure components
 // import PureParentComponent from "./components/PureParentComponent";
-import MemoParentComponent from "./components/MemoParentComponent";
-import RefsDemo from "./components/RefsDemo";
+// import MemoParentComponent from "./components/MemoParentComponent";
 
+// refs
+// import RefsDemo from "./components/RefsDemo";
+// import RefsWithClassComponentParent from "./components/RefsWithClassComponent";
+// import ForwardRefParent from "./components/ForwardRefParent";
+import PortalDemo from "./components/PortalDemo";
 
 function App() {
   return (
@@ -68,7 +72,12 @@ function App() {
       {/* <PureParentComponent /> */}
       {/* <MemoParentComponent /> */}
 
-      <RefsDemo />
+      {/* refs */}
+      {/* <RefsDemo /> */}
+      {/* <RefsWithClassComponentParent /> */}
+      {/* <ForwardRefParent /> */}
+
+      <PortalDemo />
     </div>
   );
 }
