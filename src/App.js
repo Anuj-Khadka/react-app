@@ -43,7 +43,7 @@ import "./App.css";
 import DemoRenderProps, {
   ClickCounterRenderProps,
   CounterRenderProps,
-  HoverCounterRenderProps
+  HoverCounterRenderProps,
 } from "./components/RenderProps";
 
 function App() {
@@ -110,22 +110,31 @@ function App() {
       <DemoRenderProps
         render={(isLoggedIn) => (isLoggedIn ? "user" : "guest")}
       />
-      <CounterRenderProps
+      {/* <CounterRenderProps
         render={(count, countIncrement) => (
           <ClickCounterRenderProps
             count={count}
             countIncrement={countIncrement}
           />
         )}
-      />
-      <CounterRenderProps
+      /> */}
+      {/* <CounterRenderProps
         render={(count, countIncrement) => (
           <HoverCounterRenderProps
             count={count}
             countIncrement={countIncrement}
           />
+        )} 
+      /> */}
+      {/* you can directly embbed the function into it  */}
+      <CounterRenderProps>
+        {(count, countIncrement) => (
+          <HoverCounterRenderProps
+            count={count}
+            countIncrement={countIncrement}
+          />
         )}
-      />
+      </CounterRenderProps>
     </div>
   );
 }
