@@ -32,7 +32,15 @@ import "./App.css";
 // import RefsDemo from "./components/RefsDemo";
 // import RefsWithClassComponentParent from "./components/RefsWithClassComponent";
 // import ForwardRefParent from "./components/ForwardRefParent";
-import PortalDemo from "./components/PortalDemo";
+
+// import PortalDemo from "./components/PortalDemo";
+
+// error boundary
+// import ErrorBoundary, { ErrorChild } from "./components/ErrorBoundary";
+
+// higher order component
+// import ClickCounter, { NewHoverCounter } from "./components/HigherOrderComp";
+import DemoRenderProps from "./components/RenderProps";
 
 function App() {
   return (
@@ -77,7 +85,27 @@ function App() {
       {/* <RefsWithClassComponentParent /> */}
       {/* <ForwardRefParent /> */}
 
-      <PortalDemo />
+      {/* <PortalDemo /> */}
+
+      {/* error boundary */}
+      {/* <ErrorBoundary>
+        <ErrorChild name="super" />
+      </ErrorBoundary>
+      <ErrorBoundary>
+        <ErrorChild name="duper" />
+      </ErrorBoundary>
+      <ErrorBoundary>
+        <ErrorChild name="noname" />
+      </ErrorBoundary> */}
+
+      {/* higher order components */}
+      {/* <ClickCounter yourName="noname" />
+      <NewHoverCounter /> */}
+
+      {/* render props */}
+      <DemoRenderProps
+        render={(isLoggedIn) => (isLoggedIn ? "user" : "guest")}
+      />
     </div>
   );
 }
