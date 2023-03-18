@@ -45,7 +45,10 @@ import "./App.css";
 //   CounterRenderProps,
 //   HoverCounterRenderProps,
 // } from "./components/RenderProps";
-import ComponentMain from "./components/UserContext";
+
+// import ComponentMain from "./components/UserContext";
+
+import HttpPostList from "./components/HttpPostList";
 
 function App() {
   return (
@@ -138,7 +141,10 @@ function App() {
       </CounterRenderProps> */}
 
       {/* context */}
-      <ComponentMain />
+      {/* <ComponentMain /> */}
+
+      {/* http request */}
+      <HttpPostList />
     </div>
   );
 }
