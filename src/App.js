@@ -40,11 +40,12 @@ import "./App.css";
 
 // higher order component
 // import ClickCounter, { NewHoverCounter } from "./components/HigherOrderComp";
-import DemoRenderProps, {
-  ClickCounterRenderProps,
-  CounterRenderProps,
-  HoverCounterRenderProps,
-} from "./components/RenderProps";
+// import DemoRenderProps, {
+//   ClickCounterRenderProps,
+//   CounterRenderProps,
+//   HoverCounterRenderProps,
+// } from "./components/RenderProps";
+import ComponentMain from "./components/UserContext";
 
 function App() {
   return (
@@ -107,7 +108,7 @@ function App() {
       <NewHoverCounter /> */}
 
       {/* render props */}
-      <DemoRenderProps
+      {/* <DemoRenderProps
         render={(isLoggedIn) => (isLoggedIn ? "user" : "guest")}
       />
       {/* <CounterRenderProps
@@ -127,14 +128,17 @@ function App() {
         )} 
       /> */}
       {/* you can directly embbed the function into it  */}
-      <CounterRenderProps>
+      {/* <CounterRenderProps>
         {(count, countIncrement) => (
           <HoverCounterRenderProps
             count={count}
             countIncrement={countIncrement}
           />
         )}
-      </CounterRenderProps>
+      </CounterRenderProps> */}
+
+      {/* context */}
+      <ComponentMain />
     </div>
   );
 }
