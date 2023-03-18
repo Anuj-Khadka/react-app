@@ -40,7 +40,11 @@ import "./App.css";
 
 // higher order component
 // import ClickCounter, { NewHoverCounter } from "./components/HigherOrderComp";
-import DemoRenderProps from "./components/RenderProps";
+import DemoRenderProps, {
+  ClickCounterRenderProps,
+  CounterRenderProps,
+  HoverCounterRenderProps
+} from "./components/RenderProps";
 
 function App() {
   return (
@@ -105,6 +109,22 @@ function App() {
       {/* render props */}
       <DemoRenderProps
         render={(isLoggedIn) => (isLoggedIn ? "user" : "guest")}
+      />
+      <CounterRenderProps
+        render={(count, countIncrement) => (
+          <ClickCounterRenderProps
+            count={count}
+            countIncrement={countIncrement}
+          />
+        )}
+      />
+      <CounterRenderProps
+        render={(count, countIncrement) => (
+          <HoverCounterRenderProps
+            count={count}
+            countIncrement={countIncrement}
+          />
+        )}
       />
     </div>
   );
