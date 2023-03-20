@@ -14,12 +14,24 @@ class HttpPostList extends Component {
   componentDidMount() {
     axios
       .get("https://jsonplaceholder.typicode.com/posts")
-      .then((res) => res.data)
-      .catch(err => this.setState({errMessage: "error retriving data"}));
+      // .then((res) => this.setState({ posts: res.data }))
+      .then((res) => {
+        this.setState({ posts: res.data });
+      })
+      .catch((err) => this.setState({ errMessage: "error retriving data" }));
   }
 
   render() {
-    return <div>GET Request Http Post List</div>;
+    const { posts, errMessage } = this.state;
+    return (
+      <div>
+        GET Request Http Post List
+        {posts.length
+          ? posts.map((post) => <div key={post.id}>{post.title}</div>)
+          : null}
+          {errMessage? <div>{errMessage}</div>:null}
+      </div>
+    );
   }
 }
 
