@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 
-class HttpPostList extends Component {
+class HttpGetList extends Component {
   constructor(props) {
     super(props);
 
@@ -35,4 +35,4 @@ class HttpPostList extends Component {
   }
 }
 
-export default HttpPostList;
+export default HttpGetList;
