@@ -48,7 +48,8 @@ import "./App.css";
 
 // import ComponentMain from "./components/UserContext";
 
-import HttpPostList from "./components/HttpPostList";
+// import HttpGetList from "./components/HttpGetList";
+import HttpPostForm from "./components/HttpPostForm";
 
 function App() {
   return (
@@ -144,7 +145,8 @@ function App() {
       {/* <ComponentMain /> */}
 
       {/* http request */}
-      <HttpPostList />
+      {/* <HttpGetList /> */}
+      <HttpPostForm />
     </div>
   );
 }
