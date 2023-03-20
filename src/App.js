@@ -49,7 +49,9 @@ import "./App.css";
 // import ComponentMain from "./components/UserContext";
 
 // import HttpGetList from "./components/HttpGetList";
-import HttpPostForm from "./components/HttpPostForm";
+// import HttpPostForm from "./components/HttpPostForm";
+
+import ReactPlayerApp from "./components/ReactPlayer";
 
 function App() {
   return (
@@ -146,7 +148,11 @@ function App() {
 
       {/* http request */}
       {/* <HttpGetList /> */}
-      <HttpPostForm />
+      {/* <HttpPostForm /> */}
+
+      <ReactPlayerApp />
+
+
     </div>
   );
 }
