@@ -51,7 +51,10 @@ import "./App.css";
 // import HttpGetList from "./components/HttpGetList";
 // import HttpPostForm from "./components/HttpPostForm";
 
-import ReactPlayerApp from "./components/ReactPlayer";
+// import ReactPlayerApp from "./components/ReactPlayer";
+
+// hooks
+import UseStateHooks from "./components/UseStateHooks1";
 
 function App() {
   return (
@@ -150,9 +153,10 @@ function App() {
       {/* <HttpGetList /> */}
       {/* <HttpPostForm /> */}
 
-      <ReactPlayerApp />
+      {/* <ReactPlayerApp /> */}
 
-
+      {/* hooks */}
+      <UseStateHooks />
     </div>
   );
 }
