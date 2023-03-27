@@ -54,7 +54,8 @@ import "./App.css";
 // import ReactPlayerApp from "./components/ReactPlayer";
 
 // hooks
-import UseStateHooks from "./components/UseStateHooks1";
+// import UseStateHooks from "./components/UseStateHooks1";
+import UseEffectHooks from "./components/UseEffectHooks1";
 
 function App() {
   return (
@@ -156,7 +157,8 @@ function App() {
       {/* <ReactPlayerApp /> */}
 
       {/* hooks */}
-      <UseStateHooks />
+      {/* <UseStateHooks /> */}
+      <UseEffectHooks />
     </div>
   );
 }
