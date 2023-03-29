@@ -13,6 +13,10 @@ function UseEffectHooks() {
       <br />
       run effect only once
       <UseEffectOnce />
+      <br />
+      <br />
+      effect with cleanup(componentWillUnmount)
+      <UseEffectCleanup />
     </div>
   );
 }
@@ -72,6 +76,13 @@ const UseEffectOnce = () => {
     console.log("useEffect called");
     window.addEventListener("mousemove", logMouse);
 
+    // this is an example for UseEffectCleanup
+    // the function in useEffect returns a function inside it that mimics the behaviour of componentWillUnmount from class components
+    return () => {
+      console.log("unmounted");
+      window.removeEventListener("mousemove", logMouse);
+    };
+
     // the empty array as the second parameter refers that it does not depend on any prop or state. therefore render it only once at the start
   }, []);
   return (
@@ -81,5 +92,25 @@ const UseEffectOnce = () => {
   );
 };
 
+const UseEffectCleanup = () => {
+  const [display, setDisplay] = useState(true);
+
+  // this can be used for cancelling subscription, timer or event listener itself.
+  return (
+    <div>
+      <button onClick={() => setDisplay(!display)}>toggle display</button>
+      {display && <UseEffectOnce />}
+    </div>
+  );
+};
+
+
+
+
 export default UseEffectHooks;
-export { UseEffectCounter, UseEffectConditional, UseEffectOnce };
+export {
+  UseEffectCounter,
+  UseEffectConditional,
+  UseEffectOnce,
+  UseEffectCleanup,
+};
