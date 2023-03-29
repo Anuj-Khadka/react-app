@@ -94,3 +94,4 @@ const SingleDataFetchingOnClick = () => {
 };
 
 export default UseEffectHook;
+export { DataFetching, SingleDataFetching, SingleDataFetchingOnClick };
