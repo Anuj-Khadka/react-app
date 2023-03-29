@@ -5,7 +5,8 @@ function UseEffectHook() {
   return (
     <div>
       {/* <DataFetching /> */}
-      <SingleDataFetching />
+      {/* <SingleDataFetching /> */}
+      <SingleDataFetchingOnClick />
     </div>
   );
 }
@@ -61,7 +62,35 @@ const SingleDataFetching = () => {
   );
 };
 
+const SingleDataFetchingOnClick = () => {
+  const [post, setPost] = useState({});
+  const [id, setId] = useState("1");
+  const [idFromButom, setIdFromButton] = useState(1);
 
+  const showPost = () => {
+    setIdFromButton(id);
+  };
+  useEffect(() => {
+    axios
+      .get(`https://jsonplaceholder.typicode.com/posts/${idFromButom}`)
+      .then((res) => {
+        console.log(res);
+        setPost(res.data);
+      })
+      .catch((err) => console.log(err));
+  }, [idFromButom]);
 
+  return (
+    <div>
+      <input type="number" value={id} onChange={(e) => setId(e.target.value)} />
+      <button onClick={showPost}>View</button>
+      <br />
+      <div>
+        <p>{post.title}</p>
+        <i>{post.body}</i>
+      </div>
+    </div>
+  );
+};
 
 export default UseEffectHook;
