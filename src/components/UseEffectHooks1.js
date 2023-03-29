@@ -8,7 +8,11 @@ function UseEffectHooks() {
       <br />
       <br />
       conditionally run effect
-    <UseEffectConditional />
+      <UseEffectConditional />
+      <br />
+      <br />
+      run effect only once
+      <UseEffectOnce />
     </div>
   );
 }
@@ -23,7 +27,27 @@ const UseEffectCounter = () => {
 
   return (
     <div>
-      <button onClick={()=>setCount((count) => count + 1)}>
+      <button onClick={() => setCount((count) => count + 1)}>
+        clicked {count} times
+      </button>
+    </div>
+  );
+};
+
+// conditionally run effect
+const UseEffectConditional = () => {
+  const [count, setCount] = useState(0);
+  const [update, setUpdate] = useState('')
+
+  useEffect(()=>{
+    console.log("changes detected")
+    document.title = `clicked ${count} times`
+  }, [count])
+
+  return (
+    <div>
+      <input type="text" value={update} onChange={(e)=>setUpdate(e.target.value)} />
+      <button onClick={() => setCount((count) => count + 1)}>
         clicked {count} times
       </button>
     </div>
@@ -31,8 +55,7 @@ const UseEffectCounter = () => {
 };
 
 
-// conditionally run effect
-const UseEffectConditional = ()=>{
+const UseEffectOnce = ()=>{
   return(
     <div>
 
@@ -42,6 +65,4 @@ const UseEffectConditional = ()=>{
 
 
 export default UseEffectHooks;
-export { UseEffectCounter, UseEffectConditional };
-
-
+export { UseEffectCounter, UseEffectConditional, UseEffectOnce };
