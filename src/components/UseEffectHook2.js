@@ -4,7 +4,8 @@ import axios from "axios";
 function UseEffectHook() {
   return (
     <div>
-      <DataFetching />
+      {/* <DataFetching /> */}
+      <SingleDataFetching />
     </div>
   );
 }
@@ -25,11 +26,42 @@ const DataFetching = () => {
     <div>
       <ul>
         {posts.map((post, id) => (
-          <li key={id}>{id}...{post.title}</li>
+          <li key={id}>
+            {id}...{post.title}
+          </li>
         ))}
       </ul>
     </div>
   );
 };
+
+const SingleDataFetching = () => {
+  const [post, setPost] = useState({});
+  const [id, setId] = useState("1");
+
+  useEffect(() => {
+    axios
+      .get(`https://jsonplaceholder.typicode.com/posts/${id}`)
+      .then((res) => {
+        console.log(res);
+        setPost(res.data);
+      })
+      .catch((err) => console.log(err));
+  }, [id]);
+  return (
+    <div>
+      <input type="number" value={id} onChange={(e) => setId(e.target.value)} />
+
+      <br />
+      <div>
+        <p>{post.title}</p>
+        <i>{post.body}</i>
+      </div>
+    </div>
+  );
+};
+
+
+
 
 export default UseEffectHook;
