@@ -17,6 +17,10 @@ function UseEffectHooks() {
       <br />
       effect with cleanup(componentWillUnmount)
       <UseEffectCleanup />
+      <br />
+      <br />
+      useEffect with incorrect dependency
+      <UseEffectIncorrectDependency />
     </div>
   );
 }
@@ -104,8 +108,24 @@ const UseEffectCleanup = () => {
   );
 };
 
+const UseEffectIncorrectDependency = () => {
+  const [counter, setCounter] = useState(0);
 
+  const tick = () => {
+    // setCounter(prevCounter = (prevCounter + 1))
+    setCounter(counter + 1);
+  };
 
+  useEffect(() => {
+    const interval = setInterval(tick, 1000);
+    return () => {
+      clearInterval(interval);
+    };
+    // }, [])
+  }, [counter]);
+
+  return <div>{counter}</div>;
+};
 
 export default UseEffectHooks;
 export {
@@ -113,4 +133,5 @@ export {
   UseEffectConditional,
   UseEffectOnce,
   UseEffectCleanup,
+  UseEffectIncorrectDependency,
 };
