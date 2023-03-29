@@ -37,16 +37,20 @@ const UseEffectCounter = () => {
 // conditionally run effect
 const UseEffectConditional = () => {
   const [count, setCount] = useState(0);
-  const [update, setUpdate] = useState('')
+  const [update, setUpdate] = useState("");
 
-  useEffect(()=>{
-    console.log("changes detected")
-    document.title = `clicked ${count} times`
-  }, [count])
+  useEffect(() => {
+    console.log("changes detected");
+    document.title = `clicked ${count} times`;
+  }, [count]);
 
   return (
     <div>
-      <input type="text" value={update} onChange={(e)=>setUpdate(e.target.value)} />
+      <input
+        type="text"
+        value={update}
+        onChange={(e) => setUpdate(e.target.value)}
+      />
       <button onClick={() => setCount((count) => count + 1)}>
         clicked {count} times
       </button>
@@ -54,15 +58,28 @@ const UseEffectConditional = () => {
   );
 };
 
+const UseEffectOnce = () => {
+  const [X, setX] = useState(0);
+  const [Y, setY] = useState(0);
 
-const UseEffectOnce = ()=>{
-  return(
+  const logMouse = (e) => {
+    console.log("mouse event");
+    setX(e.clientX);
+    setY(e.clientY);
+  };
+
+  useEffect(() => {
+    console.log("useEffect called");
+    window.addEventListener("mousemove", logMouse);
+
+    // the empty array as the second parameter refers that it does not depend on any prop or state. therefore render it only once at the start
+  }, []);
+  return (
     <div>
-
+      values are here for x = {X} and y = {Y}
     </div>
-  )
-}
-
+  );
+};
 
 export default UseEffectHooks;
 export { UseEffectCounter, UseEffectConditional, UseEffectOnce };
