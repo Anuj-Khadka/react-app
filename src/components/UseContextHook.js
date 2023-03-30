@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 
 const UserContext = React.createContext();
 const ChannelContext = React.createContext();
@@ -8,7 +8,7 @@ function UseContextHook() {
     <div>
       UseContextHook
       <UserContext.Provider value="hehehe">
-        <ChannelContext.Provider value="hehehe">
+        <ChannelContext.Provider value="cecece">
           <ChildOne />
         </ChannelContext.Provider>
       </UserContext.Provider>
@@ -25,9 +25,11 @@ function ChildOne() {
 }
 
 function ChildTwo() {
+  const user = useContext(UserContext);
+  const channel = useContext(ChannelContext);
   return (
     <div>
-      hehehe {user} - {channel}
+      okay, {user} - {channel}
     </div>
   );
 }
