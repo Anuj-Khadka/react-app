@@ -57,7 +57,8 @@ import "./App.css";
 // import UseStateHooks from "./components/UseStateHooks1";
 // import UseEffectHooks from "./components/UseEffectHooks1";
 // import UseEffectHook from "./components/UseEffectHook2";
-import UseContextHook from "./components/UseContextHook";
+// import UseContextHook from "./components/UseContextHook";
+import UseReducerHook1 from "./components/UseReducerHook1";
 
 function App() {
   return (
@@ -162,7 +163,8 @@ function App() {
       {/* <UseStateHooks /> */}
       {/* <UseEffectHooks /> */}
       {/* <UseEffectHook /> */}
-      <UseContextHook />
+      {/* <UseContextHook /> */}
+      <UseReducerHook1 />
     </div>
   );
 }
