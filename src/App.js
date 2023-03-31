@@ -60,7 +60,8 @@ import "./App.css";
 // import UseContextHook from "./components/UseContextHook";
 // import UseReducerHook1 from "./components/UseReducerHook1";
 // import UseReducerHook2 from "./components/UseReducerHook2";
-import UseCallbackHook from "./components/UseCallbackHook";
+// import UseCallbackHook from "./components/UseCallbackHook";
+import UseMemoHook from "./components/UseMemoHook";
 
 function App() {
   return (
@@ -168,7 +169,8 @@ function App() {
       {/* <UseContextHook /> */}
       {/* <UseReducerHook1 /> */}
       {/* <UseReducerHook2 /> */}
-      <UseCallbackHook />
+      {/* <UseCallbackHook /> */}
+      <UseMemoHook />
     </div>
   );
 }
