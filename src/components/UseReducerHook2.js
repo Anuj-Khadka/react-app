@@ -5,6 +5,7 @@ function UseReducerHook2() {
   return (
     <div>
       <DataFetchingState />
+      <DataFetchingReducer />
     </div>
   );
 }
@@ -19,14 +20,14 @@ const DataFetchingState = () => {
     axios
       .get("https://jsonplaceholder.typicode.com/posts/2")
       .then((res) => {
-        console.log(res.data)
+        console.log(res.data);
         setLoading(false);
         setPost(res.data);
-        setError('')
+        setError("");
       })
       .catch((err) => {
         setLoading(false);
-        setPost({})
+        setPost({});
         setError("something went wrong");
       });
   }, []);
@@ -42,31 +43,44 @@ const DataFetchingState = () => {
 // data fetching with useReducer
 
 const initialState = {
-    post: {},
-    error : '',
-    loading: true
-}
+  post: {},
+  error: "",
+  loading: true,
+};
 
-const reducer = (state, action)=>{
-    switch(action.type){
-        case "FETCH_SUCCESS":
-            return {
-                loading: false,
-                post: action.payload,
-                error: ''
-            }
-        case "error":
-            return error
-        case "loading":
-            return loading
-    }
-}
+const reducer = (state, action) => {
+  switch (action.type) {
+    case "FETCH_SUCCESS":
+      return {
+        loading: false,
+        post: action.payload,
+        error: "",
+      };
+    case "FETCH_ERROR":
+      return {
+        loading: false,
+        post: {},
+        error: "something went wrong",
+      };
+    default:
+      return state;
+  }
+};
 
 const DataFetchingReducer = () => {
+  const [state, dispatch] = useReducer(reducer, initialState);
+  useEffect(() => {
+    axios
+      .get("https://jsonplaceholder.typicode.com/posts/5")
+      .then((response) =>
+        dispatch({ type: "FETCH_SUCCESS", payload: response.data })
+      )
+      .catch((error) => dispatch({ type: "FETCH_ERROR" }));
+  }, []);
   return (
     <div>
-      {loading ? "loading" : post}
-      {error ? error : null}
+      {state.loading ? "loading" : state.post.title}
+      {state.error ? state.error : null}
     </div>
   );
 };
