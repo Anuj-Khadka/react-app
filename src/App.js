@@ -41,16 +41,16 @@ import "./App.css";
 // higher order component
 // import ClickCounter, { NewHoverCounter } from "./components/HigherOrderComp";
 // import DemoRenderProps, {
-//   ClickCounterRenderProps,
-//   CounterRenderProps,
-//   HoverCounterRenderProps,
-// } from "./components/RenderProps";
-
-// import ComponentMain from "./components/UserContext";
-
-// import HttpGetList from "./components/HttpGetList";
-// import HttpPostForm from "./components/HttpPostForm";
-
+  //   ClickCounterRenderProps,
+  //   CounterRenderProps,
+  //   HoverCounterRenderProps,
+  // } from "./components/RenderProps";
+  
+  // import ComponentMain from "./components/UserContext";
+  
+  // import HttpGetList from "./components/HttpGetList";
+  // import HttpPostForm from "./components/HttpPostForm";
+  
 // import ReactPlayerApp from "./components/ReactPlayer";
 
 // hooks
@@ -61,7 +61,9 @@ import "./App.css";
 // import UseReducerHook1 from "./components/UseReducerHook1";
 // import UseReducerHook2 from "./components/UseReducerHook2";
 // import UseCallbackHook from "./components/UseCallbackHook";
-import UseMemoHook from "./components/UseMemoHook";
+// import UseMemoHook from "./components/UseMemoHook";
+// import UseRefHook from "./components/UseRefHook";
+import CustomHooks from "./components/hooks/CustomHooks";
 
 function App() {
   return (
@@ -170,7 +172,9 @@ function App() {
       {/* <UseReducerHook1 /> */}
       {/* <UseReducerHook2 /> */}
       {/* <UseCallbackHook /> */}
-      <UseMemoHook />
+      {/* <UseMemoHook /> */}
+      {/* <UseRefHook /> */}
+      <CustomHooks />
     </div>
   );
 }
