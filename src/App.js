@@ -63,7 +63,8 @@ import "./App.css";
 // import UseCallbackHook from "./components/UseCallbackHook";
 // import UseMemoHook from "./components/UseMemoHook";
 // import UseRefHook from "./components/UseRefHook";
-import CustomHooks from "./components/hooks/CustomHooks";
+// import CustomHooks from "./components/hooks/CustomHooks";
+import ReactRender from "./components/React Render/ReactRender";
 
 function App() {
   return (
@@ -174,7 +175,8 @@ function App() {
       {/* <UseCallbackHook /> */}
       {/* <UseMemoHook /> */}
       {/* <UseRefHook /> */}
-      <CustomHooks />
+      {/* <CustomHooks /> */}
+      <ReactRender />
     </div>
   );
 }
