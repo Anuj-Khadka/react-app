@@ -1,4 +1,6 @@
 import "./App.css";
+import { BrowserRouter } from "react-router-dom";
+
 //jsx
 // import Hello from './components/Jsx'
 // import StyleJsx from "./components/StyleJsx";
@@ -41,16 +43,16 @@ import "./App.css";
 // higher order component
 // import ClickCounter, { NewHoverCounter } from "./components/HigherOrderComp";
 // import DemoRenderProps, {
-  //   ClickCounterRenderProps,
-  //   CounterRenderProps,
-  //   HoverCounterRenderProps,
-  // } from "./components/RenderProps";
-  
-  // import ComponentMain from "./components/UserContext";
-  
-  // import HttpGetList from "./components/HttpGetList";
-  // import HttpPostForm from "./components/HttpPostForm";
-  
+//   ClickCounterRenderProps,
+//   CounterRenderProps,
+//   HoverCounterRenderProps,
+// } from "./components/RenderProps";
+
+// import ComponentMain from "./components/UserContext";
+
+// import HttpGetList from "./components/HttpGetList";
+// import HttpPostForm from "./components/HttpPostForm";
+
 // import ReactPlayerApp from "./components/ReactPlayer";
 
 // hooks
@@ -64,7 +66,8 @@ import "./App.css";
 // import UseMemoHook from "./components/UseMemoHook";
 // import UseRefHook from "./components/UseRefHook";
 // import CustomHooks from "./components/hooks/CustomHooks";
-import ReactRender from "./components/React Render/ReactRender";
+// import ReactRender from "./components/React Render/ReactRender";
+import ReactRouter from "./components/React Router/ReactRouter";
 
 function App() {
   return (
@@ -176,7 +179,14 @@ function App() {
       {/* <UseMemoHook /> */}
       {/* <UseRefHook /> */}
       {/* <CustomHooks /> */}
-      <ReactRender />
+
+      {/* react rendering  */}
+      {/* <ReactRender /> */}
+
+      {/* react router  */}
+      <BrowserRouter>
+        <ReactRouter />
+      </BrowserRouter>
     </div>
   );
 }
