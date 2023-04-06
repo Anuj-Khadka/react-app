@@ -33,6 +33,10 @@ const NavbarLink = () => {
       <NavLink style={styleNavLink} to="/products">
         Products
       </NavLink>
+      &nbsp; &nbsp; &nbsp; &nbsp;
+      <NavLink style={styleNavLink} to="/lazyloader">
+        LazyLoader
+      </NavLink>
     </nav>
   );
 };
