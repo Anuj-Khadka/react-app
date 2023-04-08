@@ -2,7 +2,9 @@ import React from 'react'
 
 const ReactRedux = () => {
   return (
-    <div>ReactRedux</div>
+    <div>
+  hehe
+    </div>
   )
 }
 
