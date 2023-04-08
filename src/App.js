@@ -1,192 +1,41 @@
+// dependencies
+import React from "react";
 import "./App.css";
 import { BrowserRouter } from "react-router-dom";
 
-//jsx
-// import Hello from './components/Jsx'
-// import StyleJsx from "./components/StyleJsx";
-
-// components
-// import Component from './components/Component'
-
-// props
-// import PropsFunction, { PropsClass, PropsChild, PropsExpression  } from "./components/Propes";
-// import ParentComponent from "./components/MethodsAsProps";
-
-// state
-// import States, {ClassCounter, FunctionStates} from "./components/States";
-// import EventBind from "./components/EventBind";
-
-// import Conditional from "./components/ConditionalRendering";
-// import NameList, {NameObject} from "./components/NameList";
-
-// import ReactFormHandling from "./components/FormHandling";
-
-// lifecycle methods
-// import MountLifecycle from "./components/MountLifecycle";
-// import MountLifecycleParent from "./components/MountLifecycleParent";
-// import UpdateLifecycleParent from "./components/UpdateLifecycleParent";
-
-// pure components
-// import PureParentComponent from "./components/PureParentComponent";
-// import MemoParentComponent from "./components/MemoParentComponent";
-
-// refs
-// import RefsDemo from "./components/RefsDemo";
-// import RefsWithClassComponentParent from "./components/RefsWithClassComponent";
-// import ForwardRefParent from "./components/ForwardRefParent";
-
-// import PortalDemo from "./components/PortalDemo";
-
-// error boundary
-// import ErrorBoundary, { ErrorChild } from "./components/ErrorBoundary";
-
-// higher order component
-// import ClickCounter, { NewHoverCounter } from "./components/HigherOrderComp";
-// import DemoRenderProps, {
-//   ClickCounterRenderProps,
-//   CounterRenderProps,
-//   HoverCounterRenderProps,
-// } from "./components/RenderProps";
-
-// import ComponentMain from "./components/UserContext";
-
-// import HttpGetList from "./components/HttpGetList";
-// import HttpPostForm from "./components/HttpPostForm";
-
-// import ReactPlayerApp from "./components/ReactPlayer";
-
-// hooks
-// import UseStateHooks from "./components/UseStateHooks1";
-// import UseEffectHooks from "./components/UseEffectHooks1";
-// import UseEffectHook from "./components/UseEffectHook2";
-// import UseContextHook from "./components/UseContextHook";
-// import UseReducerHook1 from "./components/UseReducerHook1";
-// import UseReducerHook2 from "./components/UseReducerHook2";
-// import UseCallbackHook from "./components/UseCallbackHook";
-// import UseMemoHook from "./components/UseMemoHook";
-// import UseRefHook from "./components/UseRefHook";
-// import CustomHooks from "./components/hooks/CustomHooks";
+// learnings
+// import BasicReact from "./components/basics/BasicReact";
+// import AdvancedReact from "./components/advanced/AdvancedReact";
+// import ReactHooks from "./components/hooks/ReactHooks";
 // import ReactRender from "./components/React Render/ReactRender";
-import ReactRouter from "./components/React Router/ReactRouter";
+// import ReactRouter from "./components/React Router/ReactRouter";
+import ReactRedux from "./components/React Redux/ReactRedux";
 
 function App() {
   return (
     <div className="App">
-      {/* <Hello/> */}
-      {/* <StyleJsx /> */}
-      {/* <Component /> */}
+      {/* basic concepts  */}
+      {/* <BasicReact /> */}
 
-      {/* props */}
-      {/* 
-        <PropsFunction type="function" rate="good"/>
-        <PropsClass/>
-        <PropsChild>
-          <button>this is a button, which is added from app.js file</button>
-        </PropsChild> 
-      <PropsExpression math={2*2} />
-      */}
-      {/* <ParentComponent /> */}
-
-      {/* state  */}
-      {/* <States /> */}
-      {/* <ClassCounter /> */}
-      {/* <FunctionStates /> */}
-      {/* <EventBind /> */}
-      {/* <Conditional /> */}
-      {/* <NameList /> */}
-      {/* <NameObject /> */}
-
-      {/* <ReactFormHandling /> */}
-
-      {/* lifecycle methods  */}
-      {/* <MountLifecycle /> */}
-      {/* < MountLifecycleParent /> */}
-      {/* <UpdateLifecycleParent /> */}
-
-      {/* pure components */}
-      {/* <PureParentComponent /> */}
-      {/* <MemoParentComponent /> */}
-
-      {/* refs */}
-      {/* <RefsDemo /> */}
-      {/* <RefsWithClassComponentParent /> */}
-      {/* <ForwardRefParent /> */}
-
-      {/* <PortalDemo /> */}
-
-      {/* error boundary */}
-      {/* <ErrorBoundary>
-        <ErrorChild name="super" />
-      </ErrorBoundary>
-      <ErrorBoundary>
-        <ErrorChild name="duper" />
-      </ErrorBoundary>
-      <ErrorBoundary>
-        <ErrorChild name="noname" />
-      </ErrorBoundary> */}
-
-      {/* higher order components */}
-      {/* <ClickCounter yourName="noname" />
-      <NewHoverCounter /> */}
-
-      {/* render props */}
-      {/* <DemoRenderProps
-        render={(isLoggedIn) => (isLoggedIn ? "user" : "guest")}
-      />
-      {/* <CounterRenderProps
-        render={(count, countIncrement) => (
-          <ClickCounterRenderProps
-            count={count}
-            countIncrement={countIncrement}
-          />
-        )}
-      /> */}
-      {/* <CounterRenderProps
-        render={(count, countIncrement) => (
-          <HoverCounterRenderProps
-            count={count}
-            countIncrement={countIncrement}
-          />
-        )} 
-      /> */}
-      {/* you can directly embbed the function into it  */}
-      {/* <CounterRenderProps>
-        {(count, countIncrement) => (
-          <HoverCounterRenderProps
-            count={count}
-            countIncrement={countIncrement}
-          />
-        )}
-      </CounterRenderProps> */}
-
-      {/* context */}
-      {/* <ComponentMain /> */}
-
-      {/* http request */}
-      {/* <HttpGetList /> */}
-      {/* <HttpPostForm /> */}
-
+      {/* video player library  */}
       {/* <ReactPlayerApp /> */}
 
-      {/* hooks */}
-      {/* <UseStateHooks /> */}
-      {/* <UseEffectHooks /> */}
-      {/* <UseEffectHook /> */}
-      {/* <UseContextHook /> */}
-      {/* <UseReducerHook1 /> */}
-      {/* <UseReducerHook2 /> */}
-      {/* <UseCallbackHook /> */}
-      {/* <UseMemoHook /> */}
-      {/* <UseRefHook /> */}
-      {/* <CustomHooks /> */}
+      {/* advanced concepts  */}
+      {/* <AdvancedReact /> */}
+
+      {/* hooks  */}
+      {/* <ReactHooks /> */}
 
       {/* react rendering  */}
       {/* <ReactRender /> */}
 
       {/* react router  */}
-      <BrowserRouter>
+      {/* <BrowserRouter>
         <ReactRouter />
-      </BrowserRouter>
+      </BrowserRouter> */}
+
+      {/* redux concepts  */}
+      <ReactRedux />
     </div>
   );
 }
