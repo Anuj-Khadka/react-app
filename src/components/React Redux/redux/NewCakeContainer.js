@@ -12,7 +12,7 @@ const NewCakeContainer = (props) => {
         onChange={(e) => setNumber(e.target.value)}
       />
       <h2>Number of Cakes = {props.numOfCakes}</h2>
-      <button onClick={props.buyCake(number)}>Buy {number} Cakes</button>
+      <button onClick={()=>props.buyCake(number)}>Buy {number} Cakes</button>
     </div>
   );
 };
@@ -25,7 +25,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    buyCake: () => dispatch(buyCake()),
+    buyCake: (number) => dispatch(buyCake(number)),
   };
 };
 
