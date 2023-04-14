@@ -3,9 +3,9 @@ import { fetchUsers } from "./redux/user/user-actions";
 import { connect } from "react-redux";
 
 const UserContainer = (props) => {
-  useEffect(() => {
+  useEffect((props) => {
     props.fetchUsers();
-  }, []);
+  }, [props]);
   return props.userData.loading ? (
     <h2>loading text</h2>
   ) : props.userData.error ? (
