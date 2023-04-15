@@ -1,7 +1,7 @@
 // dependencies
 import React from "react";
 import "./App.css";
-import { BrowserRouter } from "react-router-dom";
+// import { BrowserRouter } from "react-router-dom";
 
 // learnings
 // import BasicReact from "./components/basics/BasicReact";
@@ -10,7 +10,8 @@ import { BrowserRouter } from "react-router-dom";
 // import ReactRender from "./components/React Render/ReactRender";
 // import ReactRouter from "./components/React Router/ReactRouter";
 // import ReactRedux from "./components/React Redux/ReactRedux";
-import StyledComponents from "./components/Styled Components/StyledComponents";
+// import StyledComponents from "./components/Styled Components/StyledComponents";
+import ReactPractical from "./components/React Practical/ReactPractical";
 
 function App() {
   return (
@@ -39,7 +40,10 @@ function App() {
       {/* <ReactRedux /> */}
 
       {/* styled-compoenents */}
-      <StyledComponents />
+      {/* <StyledComponents /> */}
+
+      {/* practical react  */}
+      <ReactPractical />
     </div>
   );
 }
