@@ -9,7 +9,8 @@ import { BrowserRouter } from "react-router-dom";
 // import ReactHooks from "./components/hooks/ReactHooks";
 // import ReactRender from "./components/React Render/ReactRender";
 // import ReactRouter from "./components/React Router/ReactRouter";
-import ReactRedux from "./components/React Redux/ReactRedux";
+// import ReactRedux from "./components/React Redux/ReactRedux";
+import StyledComponents from "./components/Styled Components/StyledComponents";
 
 function App() {
   return (
@@ -35,7 +36,10 @@ function App() {
       </BrowserRouter> */}
 
       {/* redux concepts  */}
-      <ReactRedux />
+      {/* <ReactRedux /> */}
+
+      {/* styled-compoenents */}
+      <StyledComponents />
     </div>
   );
 }
