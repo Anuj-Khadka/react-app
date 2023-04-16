@@ -3,6 +3,7 @@ import Icons from "./Icons";
 import Notification from "./Notification";
 import ModalDemo from "./Modals";
 import ToolTips from "./ToolTips";
+import CountUpDemo from "./CountUpDemo";
 
 const ReactPractical = () => {
   return (
@@ -20,6 +21,9 @@ const ReactPractical = () => {
       <hr />
       {/* ToolTips */}
       <ToolTips/>
+      <hr />
+      {/* CountUpDemo */}
+      <CountUpDemo/>
       <hr />
     </div>
   );
