@@ -9,6 +9,7 @@ A note repository for all the major concepts of React JS.
 - [React Render](https://github.com/Anuj-Khadka/react-app/tree/main/src/components/React%20Render)
 - [React Redux](https://github.com/Anuj-Khadka/react-app/tree/main/src/components/React%20Redux)
 - [React Practical](https://github.com/Anuj-Khadka/react-app/tree/main/src/components/React%20Practical)
+- [Styled Components](https://github.com/Anuj-Khadka/react-app/tree/main/src/components/Styled%20Components)
 - [NPM CheatSheet](https://github.com/Anuj-Khadka/react-app/blob/main/src/npm.md)
 
 ---
