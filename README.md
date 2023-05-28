@@ -13,5 +13,5 @@ A note repository for all the major concepts of React JS.
 
 
 # Find Me at:
-- [Linedin](https://linkedin.com/in/anuj-khadka)
+- [Linkedin](https://linkedin.com/in/anuj-khadka)
 - [Github](https://github.com/Anuj-Khadka)
