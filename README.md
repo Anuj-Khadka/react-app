@@ -10,3 +10,8 @@ A note repository for all the major concepts of React JS.
 - [React Redux](https://github.com/Anuj-Khadka/react-app/tree/main/src/components/React%20Redux)
 - [React Practical](https://github.com/Anuj-Khadka/react-app/tree/main/src/components/React%20Practical)
 - [NPM CheatSheet](https://github.com/Anuj-Khadka/react-app/blob/main/src/npm.md)
+
+
+# Find Me at:
+- [Linedin](https://linkedin.com/in/anuj-khadka)
+- [Github](https://github.com/Anuj-Khadka)
