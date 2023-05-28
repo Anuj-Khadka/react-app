@@ -11,7 +11,7 @@ A note repository for all the major concepts of React JS.
 - [React Practical](https://github.com/Anuj-Khadka/react-app/tree/main/src/components/React%20Practical)
 - [NPM CheatSheet](https://github.com/Anuj-Khadka/react-app/blob/main/src/npm.md)
 
-<hr/>
+---
 ## Connect With Me:
 - [Linkedin](https://linkedin.com/in/anuj-khadka)
 - [Github](https://github.com/Anuj-Khadka)
